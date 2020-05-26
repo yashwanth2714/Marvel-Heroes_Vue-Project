@@ -18,10 +18,10 @@ export default {
         axios
             .all(
                 [
-                    axios.get(`http://gateway.marvel.com/v1/public/characters`, {
+                    axios.get(`https://gateway.marvel.com/v1/public/characters`, {
                     params: params
                     }),
-                    axios.get(`http://gateway.marvel.com/v1/public/comics`, {
+                    axios.get(`https://gateway.marvel.com/v1/public/comics`, {
                     params
                     })
                 ]
