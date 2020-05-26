@@ -50,7 +50,9 @@ export default {
         }
     },
     mounted() {
-        this.makeToast();
+        if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            this.makeToast();
+        }
     },
 }
 </script>
