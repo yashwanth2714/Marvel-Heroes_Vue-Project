@@ -4,6 +4,9 @@
             <div id="desc">
                 <p>{{description}}</p>
             </div>
+            <div id="nameSec">
+                <h3>{{name}}</h3>
+            </div>
             <div id="list"> 
                 <div id="comics">
                     <Header :title='headers[0]' />
@@ -37,7 +40,7 @@
     import { mapState } from 'vuex'
 
     export default {
-        props: ['img','comics','series','stories','description'],
+        props: ['img','comics','series','stories','description','name'],
         components: {
             Header,
             List
@@ -71,6 +74,7 @@
          display: grid;
          grid-template-columns: 1fr;
          grid-template-areas: 
+         "name"
          "image"
          "desc"
          "list";
@@ -86,6 +90,13 @@
     #image {
         grid-area: image;
         height: 100%;
+    }
+    #nameSec {
+        grid-area: name;
+    }
+    #nameSec h3 {
+        color:white;
+        font-weight: 700;
     }
     #desc {
         grid-area: desc;
@@ -135,7 +146,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-areas: 
-        "desc ."
+        "desc name"
         "list image";
         padding: 50px;
         }

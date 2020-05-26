@@ -1,6 +1,6 @@
 <template>
     <div id="itemsBox">
-        <Items :img="image(character.thumbnail)" :comics="comics" :series="series" :stories="stories" :description="character.description"/>
+        <Items :img="image(character.thumbnail)" :comics="comics" :series="series" :stories="stories" :description="character.description" :name="character.name"/>
     </div>
 </template>
 
