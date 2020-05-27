@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <div id="logo"><img :src="logo" alt="Marvel" ></div>
-      <router-link to="/" id="link1">Characters</router-link> |
+      <router-link to="/" id="link1">Characters</router-link> 
       <router-link to="/about" id="link2">Comics</router-link>
     </div>
     <router-view/>
