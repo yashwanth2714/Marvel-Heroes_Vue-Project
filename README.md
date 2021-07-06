@@ -15,5 +15,6 @@ npm run serve
 npm run build
 ```
 
-[Marvel API](https://developer.marvel.com/documentation/generalinfo)<br>
+[Marvel API](https://developer.marvel.com/documentation/generalinfo)
+<br>
 Check the site here [Marvel Heroes](https://yash-marvelheroes.netlify.app/)
