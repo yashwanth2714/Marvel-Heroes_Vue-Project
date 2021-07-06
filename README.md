@@ -1,4 +1,4 @@
-# Marvel Heroes - Second VueJs Project
+# Marvel Heroes - Second VueJs Project :wave:
 
 ## Project setup
 ```
